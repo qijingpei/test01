@@ -1,5 +1,5 @@
 node('slave1'){ 	
-    stage('Build') {
-        bat 'ipconfig'
+    stage('clean-temp') {
+        bat "rd /s /q %temp%"
     }
 }
